@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rajesh S | Data Science Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298, #007bb5);
+            color: #333;
+            animation: gradientBG 10s infinite alternate;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: left top; }
+            100% { background-position: right bottom; }
+        }
+
+        header {
+            text-align: center;
+            padding: 2.5rem 1rem;
+            background: #004e92;
+            color: #ffffff;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            animation: headerFade 2s;
+        }
+
+        .profile-photo {
+            width: 115px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #458cc7;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 0 auto 1rem;
+        }
+
+        @keyframes headerFade {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav {
+            text-align: center;
+            background: #0072bb;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            animation: navSlide 1.5s;
+        }
+
+        @keyframes navSlide {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav a {
+            color: #f1f1f1;
+            margin: 0 1.5rem;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        nav a:hover {
+            color: #48cae4;
+            transform: scale(1.1);
+        }
+
+        section {
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #d9f2ff;
+            border-radius: 15px;
+            max-width: 900px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeInSection 2s ease;
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        h1, h2 {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section-heading {
+            text-align: center;
+            color: #004e92;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            position: relative;
+        }
+
+        .section-heading::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #007bb5;
+            margin: 0.5rem auto 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #004e92;
+            color: #f1f1f1;
+            font-size: 0.9rem;
+            animation: fadeUpFooter 1.5s;
+        }
+
+        @keyframes fadeUpFooter {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            padding: 0.5rem 0;
+        }
+
+        a {
+            color: #1e90ff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #00b4d8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Maxii.jpg" alt="Rajesh's Photo" class="profile-photo">
+        <h1>Rajesh S</h1>
+        <p>AI and Data Science Enthusiast | Innovator</p>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#profiles">Profiles</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
+    <section id="about">
+        <h2 class="section-heading">About Me</h2>
+        <p>
+            I am Rajesh S, a dedicated AI and Data Science student passionate about solving complex problems with cutting-edge technologies. My mission is to craft efficient solutions in AI, machine learning, and data analysis to drive innovation.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <ul>
+            <li>Programming Languages: Python, Java, C++</li>
+            <li>Web Development: React.js</li>
+            <li>Backend: PostgreSQL, MongoDB</li>
+            <li>AI & Machine Learning: TensorFlow, NLP Libraries (SpaCy, BERT)</li>
+            <li>Tools & Technologies: OCR, Scikit-learn, RAKE</li>
+        </ul>
+    </section>
+
+    <section id="profiles">
+        <h2 class="section-heading">Profiles</h2>
+        <ul>
+            <li><a href="https://leetcode.com/raju096/" target="_blank">Leetcode</a></li>
+            <li><a href="https://github.com/rajesh096/" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/rajeshs150405/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-heading">Projects</h2>
+        <ul>
+            <li>
+                <h3>InsightVerify</h3>
+                <p>Automated multilingual data extraction and verification system for DRDO RAC recruitment assessments using OCR and AI models.</p>
+            </li>
+            <li>
+                <h3>Cricket Analytics System</h3>
+                <p>Analyzes ball-by-ball cricket data to uncover strategic patterns using clustering algorithms and data visualizations.</p>
+            </li>
+            <li>
+                <h3>NeuroEdBloom</h3>
+                <p>Developed a solution for automating question paper processing, integrating Bloom's Taxonomy for cognitive complexity classification.</p>
+            </li>
+            <li>
+                <h3>Portfolio Site</h3>
+                <p>Designed and developed this professional portfolio website to showcase my technical skills, projects, and achievements.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-heading">Contact Details</h2>
+        <p><strong>Email:</strong> srajeshrajesh607@gmail.com</p>
+        <p><strong>Phone:</strong> +91 7010984250</p>
+    </section>
+
+    <section id="achievements">
+        <h2 class="section-heading">Achievements</h2>
+        <ul>
+            <li>Smart India Hackathon 2024 Finalist</li>
+            <li>HackerRank Skill Certifications in Problem Solving, Python, SQL</li>
+            <li>Elite Certificates: Python Programming & DSA, DSA using JAVA, RDBMS, GUI in Scilab</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rajesh S. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
